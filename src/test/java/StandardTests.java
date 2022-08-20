@@ -36,7 +36,7 @@ class StandardTests {
     // How to disable a test without removing its code
     @Test
     @DisplayName("A simple test which is omitted by configuration")
-    @Disabled("for demonstration purposes")
+    @Disabled("for demonstration purposes") // Disable can also be declared at class level to fully disable all tests from the class
     void skippedTest() {
         System.out.println("skippedTest is called");
     }
